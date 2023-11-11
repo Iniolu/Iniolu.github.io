@@ -46,3 +46,25 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.sparkle {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #ffd700; /* You can customize the sparkle color */
+    border-radius: 50%;
+    pointer-events: none;
+    transform-origin: 50% 50%;
+    animation: sparkleAnimation 0.8s ease-out;
+}
+
+@keyframes sparkleAnimation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
